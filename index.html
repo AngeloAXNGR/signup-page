@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <div class="left">
+    <div class="dark"></div>
+  </div>
+  <div class="right">
+    <div class="upper-section">
+      <h1>
+        This is not a real online service! You know you need something like this in your life
+        to help you realize your deepest dreams. Sign up <em>now</em> to get started
+      </h1>
+
+      <h1>You <em>know</em> you want to.</h1>
+    </div>
+
+    <div class="middle-section">
+      <h1>Let's do this!</h1>
+      <form action="#" method="get" id="signup-form" onsubmit="return validatePassword(this)">
+        <div class="left-form-controls">
+          <div class="form-row">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-row">
+            <label for="email-address">EMAIL</label>
+            <input type="email" id="email-address" name="email-address" required>
+          </div>
+          <div class="form-row">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" required>
+            <p id="error-prompt"></p>
+          </div>
+        </div>
+
+        <div class="right-form-controls">
+          <div class="form-row">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+          <div class="form-row">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="numeric" id="phone-number" name="phone-number" required>
+          </div>
+          <div class="form-row">
+            <label for="password-confirm">CONFIRM PASSWORD</label>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+            
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="bottom-section">
+      <button type="submit" form="signup-form">Create Account</button>
+      <p>Already have an account? <span>Log in</span></p>
+    </div>
+  </div>
+</body>
+</html>
