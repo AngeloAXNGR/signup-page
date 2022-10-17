@@ -6,7 +6,6 @@ function validatePassword(){
   console.log('text');
   if(password.value !== passwordConfirm.value){
     errorPrompt.textContent = '*Passwords do not match';
-    errorPrompt.setAttribute('style', 'color:red;');
     return false
   }else{
     return true;
