@@ -10,7 +10,10 @@
 </head>
 <body>
   <div class="left">
-    <div class="dark"></div>
+    <img src="img/ps-controller.jpg" alt="Sign Up Page Image">
+    <div class="dark">
+      <h1>Game One Live</h1>
+    </div>
   </div>
   <div class="right">
     <div class="upper-section">
@@ -27,31 +30,49 @@
       <form action="#" method="get" id="signup-form" onsubmit="return validatePassword(this)">
         <div class="left-form-controls">
           <div class="form-row">
-            <label for="first-name">FIRST NAME</label>
+            <label for="first-name">
+              <span>FIRST NAME</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
             <input type="text" id="first-name" name="first-name" required>
           </div>
           <div class="form-row">
-            <label for="email-address">EMAIL</label>
+            <label for="email-address">
+              <span>EMAIL</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
             <input type="email" id="email-address" name="email-address" required>
           </div>
           <div class="form-row">
-            <label for="password">PASSWORD</label>
+            <label for="password">
+              <span>PASSWORD</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
             <input type="password" id="password" name="password" required>
-            <p id="error-prompt"></p>
+            <p id="error-prompt">&nbsp;</p>
           </div>
         </div>
 
         <div class="right-form-controls">
           <div class="form-row">
-            <label for="last-name">LAST NAME</label>
+            <label for="last-name">
+              <span>LAST NAME</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
             <input type="text" id="last-name" name="last-name" required>
           </div>
           <div class="form-row">
-            <label for="phone-number">PHONE NUMBER</label>
+            <label for="phone-number">
+              <span>PHONE NUMBER</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
             <input type="numeric" id="phone-number" name="phone-number" required>
           </div>
           <div class="form-row">
-            <label for="password-confirm">CONFIRM PASSWORD</label>
+            <label for="password-confirm">
+              <span>CONFIRM PASSWORD</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
             <input type="password" id="password-confirm" name="password-confirm" required>
             
           </div>

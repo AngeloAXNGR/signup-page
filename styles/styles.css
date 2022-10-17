@@ -3,12 +3,12 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
+  /* font-size: 16px; */
 }
 
 body{
   display:flex;
   flex-direction: row;
-  /* align-items: flex-end; */
   margin: 0 auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -16,27 +16,44 @@ body{
 
 .left,
 .right{
+  /* border:2px solid red; */
   flex: 1 1 auto;
 }
 
 .left{
   width: 40%;
-  flex: 1 1 auto;
-  background-image: url(../img/ps-controller.jpg);
-  background-size: cover;
+  position: relative;
+}
+
+.left img{
+  width:100%;
+  height: 100%;
 }
 
 .dark{
-  margin-top: 25%;
-  height:10%;
+  height:20%;
+  width: 100%;
   background-color: rgba(0,0,0,0.5);
+  position:absolute;
+  top:20%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.dark h1{
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
 
 
 /* Right Section CSS */
 .right{
   width: 60%;
   flex: 1 1 auto;
+  align-self: center;
   /* background-color: lightpink; */
 }
 
@@ -50,7 +67,7 @@ body{
 }
 
 .upper-section{
-  padding-top: 125px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -69,7 +86,6 @@ body{
   /* padding-bottom: 30px; */
   display:flex;
   flex-direction: row;
-  /* justify-content: flex-start; */
   /* border:2px solid red; */
   gap: 40px;
   width: 100%;
@@ -85,7 +101,9 @@ body{
 }
 
 .form-row label{
+  margin-bottom: 5px;
   display:block;
+  font-weight:bold;
 }
 
 .form-row input{
@@ -96,13 +114,17 @@ border:none;
 box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
+.form-row input:valid{
+  border: 1px solid red;
+}
+
 .bottom-section{
   padding: 30px 150px 100px 30px;
   font-weight:bold;
 }
 
 .bottom-section button{
-  padding: 10px 30px;
+  padding: 15px 35px;
   background-color: #596D48;
   color:white;
   border:none;
