@@ -136,6 +136,14 @@ border:solid thin white;
 color:white;
 }
 
+input:invalid{
+  border: 1px solid rgb(252, 73, 100);;
+}
+
+input:valid{
+  border: 1px solid green;
+}
+
 
 .bottom-section{
   font-weight:bold;
@@ -143,12 +151,17 @@ color:white;
 
 .bottom-section button{
   padding: 15px 35px;
-  background-color: #596D48;
-  color:white;
-  border:none;
+  background:none;
+  color:rgb(252, 73, 100);
+  border:2px solid rgb(252, 73, 100);
   border-radius: 30px;
   font-weight:900;
   font-size:1rem;
+}
+
+.bottom-section button:hover{
+  background: rgb(252, 73, 100);
+  color:black;
 }
 
 .bottom-section p{
@@ -156,10 +169,10 @@ color:white;
 }
 
 .bottom-section p > span{
-  color:#596D48;
+  color:rgb(252, 73, 100);
 }
 
 #error-prompt{
-  margin-top: 5px;
-  color:rgb(252, 73, 100)
+  margin-top: 10px;
+  color:rgb(252, 73, 100);
 }

@@ -38,7 +38,8 @@
               <span>FIRST NAME</span>
               <strong><span aria-label="required">*</span></strong>
             </label>
-            <input type="text" id="first-name" name="first-name" required>
+            <input type="text" id="first-name" name="first-name" 
+            pattern="[A-Za-z]{2,20}"  title="Numbersc and Special Characters are not allowed" required>
           </div>
           <div class="form-row">
             <label for="email-address">
@@ -63,7 +64,8 @@
               <span>LAST NAME</span>
               <strong><span aria-label="required">*</span></strong>
             </label>
-            <input type="text" id="last-name" name="last-name" required>
+            <input type="text" id="last-name" name="last-name" 
+            pattern="[A-Za-z]{2,20}"  title="Numbers and Special Characters are not allowed" required>
           </div>
           <div class="form-row">
             <label for="phone-number">
